@@ -2,6 +2,11 @@
 
 const [, , ...inputs] = process.argv;
 const input = [...inputs].join(" ");
+const board = [
+  ["*", "*", "*", 10],
+  ["*", "*", -5, -10, "*", 100],
+  ["a", "A", "o", "b"],
+];
 
 // * Fizz-Buzz
 const fizzBuzz = (min = 1, max = 100) => {
@@ -22,5 +27,22 @@ const reverseText = (text = "") => {
     .join("");
 };
 
+const vocalSeeker = (board = [[]], vocals = "AIUEO") => {
+  return `vokal ditemukan 3 dan kumpulan vokal adalah ${board
+    .map((arr) =>
+      arr
+        .map((el) =>
+          typeof el === "string"
+            ? vocals.split("").find((v) => v === el.toUpperCase())
+              ? el
+              : ""
+            : ""
+        )
+        .join("")
+    )
+    .join("")}`;
+};
+
 console.log("FizzBuzz =>", fizzBuzz(), "\n");
 console.log("ReverseText =>", reverseText(input ? input : "Hello World"));
+console.log(vocalSeeker(board));
