@@ -17,6 +17,7 @@ document.getElementById("demo").innerHTML = "My Code";
 <script>
 
 document.write(5 + 6);
+window.alert(5 + 6);
 
 </script>
 
