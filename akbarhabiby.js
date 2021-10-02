@@ -7,6 +7,12 @@ const board = [
   ["*", "*", -5, -10, "*", 100],
   ["a", "A", "o", "b"],
 ];
+const arrOfNums = [
+  [[20, 10], [15], [1, 1]],
+  [[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], [2], [9, 11]],
+  [[3, 5, 1], [1, 5, 3], [1]],
+  [[2]],
+];
 
 // * Fizz-Buzz
 const fizzBuzz = (min = 1, max = 100) => {
@@ -44,6 +50,12 @@ const vocalSeeker = (board = [[]], vocals = "AIUEO") => {
   return `vokal ditemukan ${result.length} dan kumpulan vokal adalah ${result}`;
 };
 
+const deepSum = (input = [[[]]], sum = 0) => {
+  input.forEach((l1) => l1.forEach((l2) => l2.forEach((l3) => (sum += l3))));
+  return sum; // * not fully dynamic
+};
+
 console.log("FizzBuzz =>", fizzBuzz(), "\n");
-console.log("ReverseText =>", reverseText(input ? input : "Hello World"));
-console.log(vocalSeeker(board));
+console.log("ReverseText =>", reverseText(input ? input : "Hello World"), "\n");
+console.log("VocalSeeker =>", vocalSeeker(board), "\n");
+console.log("DeepSum =>", deepSum(arrOfNums));
