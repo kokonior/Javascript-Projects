@@ -1,5 +1,5 @@
 let ax = 50; 
-let bxv = 40:; 
+let bxv = 40; 
 testIf(ax, bxv) 
 function testIf(a, b) {
 
