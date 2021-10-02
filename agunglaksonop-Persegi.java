@@ -1,35 +1,31 @@
 package program;
 
-public class Persegi implements BangunDatar {
-    private int s;
+public class lingkaran implements BangunDatar {
+    private int r;
 
-    public Persegi(int s) {
-        this.s = s;
+    public int getR() {
+        return r;
+    }
+
+    public void setR(int r) {
+        this.r = r;
+    }
+public lingkaran(int r) {
+        this.r = r;
     }
 
     @Override
     public void luas() {
-    float luas;
-    luas = s * s ;
-        System.out.println("Luas Persegi: "+luas);
+        float luas;
+       luas = (float) (3.14 * r * r);
+        System.out.println("Luas Lingkaran: "+luas);
     }
 
     @Override
     public void keliling() {
     float keliling;
-    keliling = 4*s;
-        System.out.println("Keliling Persegi: "+keliling);
+    keliling = (float) (2* 3.14 * r);
+        System.out.println("Keliling Lingkaran: "+keliling);
     }
 
-    public int getS() {
-        return s;
-    }
-
-    public void setS(int s) {
-        this.s = s;
-    }
-    
-    
-
-    
 }
