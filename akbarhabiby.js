@@ -1,3 +1,8 @@
+// * run with node akbarhabiby.js _input-text_
+
+const [, , ...inputs] = process.argv;
+const input = [...inputs].join(" ");
+
 // * Fizz-Buzz
 const fizzBuzz = (min = 1, max = 100) => {
   const arr = [];
@@ -10,4 +15,12 @@ const fizzBuzz = (min = 1, max = 100) => {
   return arr;
 };
 
-console.log("FizzBuzz =>", fizzBuzz());
+const reverseText = (text = "") => {
+  return text
+    .split("")
+    .map((_, i) => text[text.length - (1 + i)])
+    .join("");
+};
+
+console.log("FizzBuzz =>", fizzBuzz(), "\n");
+console.log("ReverseText =>", reverseText(input ? input : "Hello World"));
