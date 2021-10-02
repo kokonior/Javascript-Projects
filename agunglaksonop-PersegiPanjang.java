@@ -1,6 +1,6 @@
 package program;
 
-public class PersegiPanjang implements BangunDatar {
+public class Persegi panjang implements BangunDatar {
 private int p,l;
 
  public int getP() {
