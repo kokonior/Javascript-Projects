@@ -21,6 +21,8 @@ window.alert(5 + 6);
 
 </script>
 
+<button onclick="window.print()">Print this page</button>
+
 </body>
 
 </html>
