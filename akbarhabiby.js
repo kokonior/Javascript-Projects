@@ -28,7 +28,7 @@ const reverseText = (text = "") => {
 };
 
 const vocalSeeker = (board = [[]], vocals = "AIUEO") => {
-  return `vokal ditemukan 3 dan kumpulan vokal adalah ${board
+  const result = board
     .map((arr) =>
       arr
         .map((el) =>
@@ -40,7 +40,8 @@ const vocalSeeker = (board = [[]], vocals = "AIUEO") => {
         )
         .join("")
     )
-    .join("")}`;
+    .join("");
+  return `vokal ditemukan ${result.length} dan kumpulan vokal adalah ${result}`;
 };
 
 console.log("FizzBuzz =>", fizzBuzz(), "\n");
