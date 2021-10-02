@@ -6,14 +6,14 @@
             this.persona = persona;
         }
 
-        Mahasiswa.prototype.dandan = function(jam){
-            this.persona += jam;
+        Mahasiswa.prototype.makan = function(energi){
+            this.persona += energi;
             console.log(`Halo ${this.nama}, selamat berdandan !`);
         }
 
-        Mahasiswa.prototype.mandi = function (waktu){
+        Mahasiswa.prototype.main = function (waktu){
             this.persona -= waktu;
-            console.log(`Halo ${this.nama}, selamat mandi!`);
+            console.log(`Halo ${this.nama}, selamat bermain!`);
         }
 
         Mahasiswa.prototype.tidur = function (jam){
