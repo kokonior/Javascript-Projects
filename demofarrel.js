@@ -1,4 +1,4 @@
-<button onclick="myFunction()">Click Me!</button>
+<button onclick="myFunction()">Click Me Buddy!</button>
 
 <script>
 function myFunction() {
