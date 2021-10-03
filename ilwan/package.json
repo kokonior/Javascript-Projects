@@ -1,0 +1,16 @@
+{
+  "name": "covid-helper",
+  "version": "1.0.0",
+  "description": "info mengenai covid di indonesia",
+  "main": "function.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "covid-19",
+    "covid",
+    "indonesia"
+  ],
+  "author": "ilwan",
+  "license": "ISC"
+}
