@@ -1,3 +1,4 @@
+//informasi covid-19 indonesia
 const cheerio = require("cheerio")
 const axios = require("axios")
 
@@ -38,6 +39,8 @@ function covid(){
 			})
 			console.log(hasil)
 		})
-		.catch(reject)
+		.catch(e => {
+                    console.log(e)
+                })
 	})
 }
