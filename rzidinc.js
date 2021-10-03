@@ -43,7 +43,14 @@ const {
 
 const countLoop = 6;
 
+console.log("Normal Triangle");
 console.log(normalTriangle(countLoop));
+
+console.log("Ascending Triangle");
 console.log(ascTriangle(countLoop));
+
+console.log("Normal Reverse Triangle");
 console.log(normalReverseTriangle(countLoop));
+
+console.log("Reverse Ascending Triangle");
 console.log(reverseAscTriangle(countLoop));
