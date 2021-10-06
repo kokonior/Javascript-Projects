@@ -1,0 +1,60 @@
+import axios from "axios";
+
+function main() {
+    const url = "http://www.omdbapi.com";
+    const api = "apikey=b1f3860a";
+    const searchElement = document.querySelector("#searchElement");
+    const searchButton = document.querySelector("#searchButton");
+    
+    
+    const movie = async () => {
+        try {
+            const get = await axios.get(`${url}/?${api}&s=one piece&type=movie`);
+            const resGet = await get.data.Search;
+            render(resGet);
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+    const searchMovie = async (key) => {
+        try {
+            const get = await axios.get(`${url}/?${api}&s=${key}&type=movie`);
+            const resGet = await get.data.Search;
+            render(resGet);
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+    const render = (movies) => {
+        const card = document.querySelector(".row");
+        const totalMovie = document.querySelector(".totalMovie");
+        card.innerHTML = "";
+        totalMovie.innerHTML = movies.length;
+        
+        movies.forEach( movie => {
+            card.innerHTML += `
+            <div class="col">
+                <div class="card p-3 border bg-light h-100" style="width: 18rem;">
+                <img src="${movie.Poster}" class="card-img-top img-thumbnail">
+                <div class="card-body">
+                    <h5 class="card-title">${movie.Title}</h5>
+                    <p class="card-text">${movie.Year}</p>
+                </div>
+                </div>
+            </div>
+            `;
+        })
+    }
+    searchButton.addEventListener("click", () => {
+        searchMovie(searchElement.value);
+        searchElement.value = '';
+    })
+
+    document.addEventListener("DOMContentLoaded", () => {
+        movie();
+    });
+};
+
+export default main;
