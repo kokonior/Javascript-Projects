@@ -16,7 +16,7 @@ function pl() {
         } else {
             let firstMatch = ss.match(/[aeiou]/g) || 0;
             let vowel = ss.indexOf(firstMatch[0]);
-            newStr = ss.substring(vowel) + ss.substring(0, vowel) + "ay";
+            newStr += " " + ss.substring(vowel) + ss.substring(0, vowel) + "ay";
         }
     }
     ot.innerHTML = newStr;
