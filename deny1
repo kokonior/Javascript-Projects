@@ -1,0 +1,2 @@
+let str = "Apple, Banana, Kiwi";
+substring(7, 13)    // Returns Banana
