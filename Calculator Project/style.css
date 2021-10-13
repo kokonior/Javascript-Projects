@@ -1,0 +1,290 @@
+html {
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  background: hsl(222, 26%, 31%);
+  font-family: "Spartan", sans-serif;
+}
+
+.top {
+  height: 96px;
+  width: 440px;
+  display: grid;
+  grid-template-columns: 35% 51% 20%;
+  grid-template-rows: 40% 40%;
+  grid-template-areas:
+    ". . text"
+    "block theme_text scroll";
+  position: relative;
+  left: 30%;
+  align-items: center;
+  justify-items: center;
+  color: white;
+}
+
+.block {
+  font-size: 26px;
+  grid-area: block;
+  padding-right: 50%;
+}
+
+#theme_text {
+  font-size: 12px;
+  grid-area: theme_text;
+  padding-left: 60%;
+}
+
+.text {
+  word-spacing: 6px;
+  font-size: 12px;
+  grid-area: text;
+  align-self: flex-end;
+}
+
+.scroll {
+  width: 60px;
+  height: 22px;
+  background-color: hsl(223, 31%, 20%);
+  border-radius: 12px;
+  grid-area: scroll;
+}
+
+.circle {
+  width: 14px;
+  height: 14px;
+  border-radius: 12px;
+  background: hsl(6, 63%, 50%);
+  position: relative;
+  top: 4px;
+  left: 5px;
+  transform: translateX(0);
+}
+
+.display {
+  height: 100px;
+  width: 440px;
+  background: hsl(224, 36%, 15%);
+  color: white;
+  border-radius: 12px;
+  position: absolute;
+  top: 12%;
+  left: 30%;
+  font-size: 2rem;
+  text-align: end;
+  padding-right: 15px;
+  vertical-align: middle;
+  line-height: 100px;
+  overflow-x: auto;
+}
+
+input:active,
+input::backdrop {
+  box-shadow: none;
+  outline: 0;
+}
+
+.keypad {
+  height: 390px;
+  width: 420px;
+  background: hsl(223, 31%, 20%);
+  border-radius: 3%;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "box7 box8 box9 del"
+    "box4 box5 box6 plus"
+    "box1 box2 box3 minus"
+    "deci box0 div mul"
+    "reset reset equal equal";
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+  padding: 18px;
+}
+
+input {
+  height: 78%;
+  width: 92%;
+  border-radius: 12px;
+  border: none;
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box8,
+.box9,
+.mul,
+.box0,
+.deci,
+.div,
+.minus,
+.plus {
+  background: hsl(30, 25%, 89%);
+  color: hsl(221, 14%, 31%);
+  box-shadow: 0 3px 1px 0px hsl(28, 16%, 65%);
+  font-size: 28px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 56.7px;
+}
+
+.reset,
+.del {
+  background: hsl(225, 21%, 49%);
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 54.7px;
+  box-shadow: 0 3px 1px 0px hsl(224, 28%, 35%);
+}
+
+.equal {
+  background: hsl(6, 63%, 50%);
+  color: white;
+  box-shadow: 0 3px 1px 0px hsl(6, 70%, 34%);
+  text-align: center;
+  vertical-align: middle;
+  line-height: 54.7px;
+}
+
+.box0 {
+  grid-area: box0;
+}
+
+.box1 {
+  grid-area: box1;
+}
+
+.box2 {
+  grid-area: box2;
+}
+
+.box3 {
+  grid-area: box3;
+}
+
+.box4 {
+  grid-area: box4;
+}
+
+.box5 {
+  grid-area: box5;
+}
+
+.box6 {
+  grid-area: box6;
+}
+
+.box7 {
+  grid-area: box7;
+}
+
+.box8 {
+  grid-area: box8;
+}
+
+.box9 {
+  grid-area: box9;
+}
+
+.deci {
+  grid-area: deci;
+}
+
+.mul {
+  grid-area: mul;
+}
+
+.div {
+  grid-area: div;
+}
+
+.plus {
+  grid-area: plus;
+}
+
+.minus {
+  grid-area: minus;
+}
+
+.equal {
+  grid-area: equal;
+}
+
+.reset {
+  grid-area: reset;
+}
+
+.del {
+  grid-area: del;
+}
+
+@media only screen and (max-width: 572px) {
+  body {
+    display: block;
+  }
+  .keypad {
+    width: 80%;
+    height: 52%;
+    left: 6% !important;
+    top: 35%;
+    border-radius: 10px;
+  }
+
+  input {
+    width: 90%;
+    height: 85%;
+    border-radius: 8px;
+  }
+
+  .display {
+    width: 86%;
+    left: 6% !important;
+    top: 16%;
+    border-radius: 10px;
+  }
+
+  .top {
+    left: 4%;
+    width: 86%;
+    grid-template-columns: 20% 60% 30%;
+  }
+
+  .block {
+    padding-left: 45%;
+  }
+
+  #theme_text {
+    padding-left: 80%;
+  }
+
+  .text {
+    justify-self: center;
+    word-spacing: 10px;
+  }
+
+  .scroll {
+    justify-self: center;
+    height: 65%;
+    width: 65%;
+  }
+
+  .circle {
+    height: 65%;
+    width: 25%;
+  }
+}
