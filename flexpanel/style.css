@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    background: url(./img_lights.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+strong {
+    transition: 1000ms;
+    font-family: "Kumbh Sans", serif;
+}
+
+.panel {
+    background: rgba(126, 126, 126, 0.1);
+    flex: 1;
+    box-shadow: inset 0px 0px 5px grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    overflow: hidden;
+    transition: all 1500ms;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.panel p {
+    color: #ffffff;
+    padding: 0 0.5rem;
+    font-size: 1.8rem;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: all 1000ms;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    font-family: monospace;
+}
+
+.panel p:first-child {
+    transform: translateY(-100%);
+}
+
+.panel p:last-child {
+    transform: translateY(100%);
+}
+
+.panel.panel--active {
+    flex: 3;
+}
+
+.panel.panel--active strong {
+    font-size: 3rem;
+    text-shadow: 3px 5px black;
+}
+
+.panel.panel--active p:last-child.active {
+    transform: translateY(0%);
+}
+
+.panel.panel--active p:first-child.active {
+    transform: translateY(0%);
+}
