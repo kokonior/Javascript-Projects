@@ -1,0 +1,36 @@
+
+#toggle {
+    width: 130px;
+    height: 40px;
+    border-radius: 50px 50px 50px 50px;
+    border: 2px solid black;
+    margin: auto;
+    cursor: pointer;
+    padding: 1px;
+    margin-top: 50px;
+}
+
+#ball {
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+    background-color: black;
+}
+
+#text {
+    margin-top: 160px;
+}
+
+/* jQuery Classes */
+
+.margin-90 {
+    margin-left: 90px; 
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.text-white {
+    color: white;
+}
