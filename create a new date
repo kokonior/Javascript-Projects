@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Dates</h2>
+
+<p>new Date() creates a new date object with the current date and time:</p>
+
+<p id="demo"></p>
+
+<script>
+const = new Date();
+document.getElementById("demo").innerHTML = d;
+</script>
+
+</body>
+</html>
