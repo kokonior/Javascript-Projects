@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns= "http://www.w3.org/1999/xhtml">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sort!</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="home.css">
+        <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+
+        <div id="header">
+            <h2>See the Sort!</h2>
+        </div>
+        
+        <div id="sorting-panel" class="d-flex justify-content-center">
+            <div id="sort-container">
+            </div>
+        </div>
+        
+
+        <div id="bottom-panel">
+            <form>
+                <div class="form-row justify-content-center m-0 mt-4">
+                    <div class="form-group d-flex">
+                        <h5 id="label">Choose Your Sort!</h5>
+                        <select name="" id="list" class="form-control">
+                            <option value="bubble">Bubble Sort</option>
+                            <option value="selection">Selection Sort</option>
+                            <option value="insertion">Insertion Sort</option>
+                            <option value="merge">Merge Sort</option>
+                            <option value="quick">Quick Sort</option>
+                            <option value="shell">Shell Sort</option>
+                            <option value="radix">Radix(LSD) Sort</option>
+                            <option value="cocktail">Cocktail Shaker Sort</option>
+                            <option value="count">Counting Sort</option>
+                            <option value="gnome">Gnome Sort</option>
+                            <option value="comb">Comb Sort</option>
+                            <option value="bogo">Bogo Sort</option>
+                        </select>    
+                    </div>
+                    <button class="btn btn-success" id="init">Sort</button>
+                    <button class="btn btn-danger" id="shuffle">Shuffle</button>
+                </div>
+            </form>
+        </div>
+        <script
+            src="https://code.jquery.com/jquery-3.5.0.min.js"
+            integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="home.js" async defer></script>
+    </body>
+</html>
