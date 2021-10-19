@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+html {
+  box-sizing: border-box;
+}
+body{
+min-height: 100vh;
+  margin: 0; /* Important! */
+  font-family: sans-serif;
+  background:
+    linear-gradient(45deg, hsla(340, 100%, 55%, 1) 0%, hsla(340, 100%, 55%, 0) 70%),
+    linear-gradient(135deg, hsla(225, 95%, 50%, 1) 10%, hsla(225, 95%, 50%, 0) 80%),
+    linear-gradient(225deg, hsla(140, 90%, 50%, 1) 10%, hsla(140, 90%, 50%, 0) 80%),
+    linear-gradient(315deg, hsla(35, 95%, 55%, 1) 100%, hsla(35, 95%, 55%, 0) 70%);
+    
+}
+.links{
+  display: flex;
+  justify-content: center;
+  margin:100px 0;
+}
+a{
+text-decoration:none;
+color:black;
+
+  background: rgba(0,0,0,0.05);
+  border-radius: 20px;
+}
+.links a{display:inline-block;
+margin: 0 20px;
+padding:5px;
+}
+.content{
+padding:10px;
+  margin: 0 auto;
+  max-width: 500px;
+  font-size: 20px;
+  line-height: 2;
+  position: relative;
+}
+.move{
+transition: all 0.2s;
+  border-bottom: 2px solid white;
+  position: absolute;
+  top: 0;
+  background: white;
+  left: 0;
+  z-index: -1;
+  border-radius: 25px;
+  display: block;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+</style>
+</head>
+<body>
+
+<div class=links>
+	<a href=#>Home</a>
+	<a href=#>About</a>
+    <a href=#>Order</a>
+    <a href=#>Tweets</a>
+    <a href=#>Read out history</a>
+    <a href=#>Contact</a>
+</div>
+    <div class=content>
+    	<p>Lorem ipsum dolor sit amet, <a href="">consectetur</a> adipisicing elit. Est <a href="">explicabo</a> unde natus necessitatibus esse obcaecati distinctio, aut itaque, qui vitae!</p>
+      <p>Aspernatur sapiente quae sint <a href="">soluta</a> modi, atque praesentium laborum pariatur earum <a href="">quaerat</a> cupiditate consequuntur facilis ullam dignissimos, aperiam quam veniam.</p>
+      <p>Cum ipsam quod, incidunt sit ex <a href="">tempore</a> placeat maxime <a href="">corrupti</a> possimus <a href="">veritatis</a> ipsum fugit recusandae est doloremque? Hic, <a href="">quibusdam</a>, nulla.</p>
+      <p>Esse quibusdam, ad, ducimus cupiditate <a href="">nulla</a>, quae magni odit <a href="">totam</a> ut consequatur eveniet sunt quam provident sapiente dicta neque quod.</p>
+      <p>Aliquam <a href="">dicta</a> sequi culpa fugiat <a href="">consequuntur</a> pariatur optio ad minima, maxime <a href="">odio</a>, distinctio magni impedit tempore enim repellendus <a href="">repudiandae</a> quas!</p>
+	</div>
+</body>
+<script>
+const triggers = document.querySelectorAll('a');
+const highlight = document.createElement('span');
+highlight.classList.add('move');
+document.body.appendChild(highlight);
+  
+function cover(e){
+    const linkCoords =this.getBoundingClientRect();
+    const coords = {
+    	width: linkCoords.width,
+        height: linkCoords.height,
+        top: linkCoords.top +window.scrollY,
+        left: linkCoords.left + window.scrollX
+        }
+    highlight.style.width = `${coords.width}px`;
+    highlight.style.height = `${coords.height}px`;
+    highlight.style.transform = `translate(${coords.left}px, ${coords.top}px)`;
+    
+   	console.log(cords);
+    }
+triggers.forEach(a => {
+	a.addEventListener('mouseover', cover)
+    });
+    
+</script>
+
+</html>
