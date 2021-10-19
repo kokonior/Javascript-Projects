@@ -1,0 +1,59 @@
+#text{
+
+    width: 90%;
+    height: 500px;
+    margin: auto;
+    padding: 50px 20px;
+    border: solid;
+}
+
+.tools{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 10px 50px;
+    width: 100%;
+    
+}
+
+button{
+    background-color: rgb(228, 228, 228);
+}
+
+
+
+.dark{
+    background-color: rgb(14, 0, 29);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: medium;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+.light{
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: medium;
+    position: absolute;
+    right: 10px;
+    width: 30px;
+    height: 30px
+}
+
+button:focus{
+    outline: none;
+}
+
+body{
+    height: screen;
+    background-color: white;
+    color: black;
+}
