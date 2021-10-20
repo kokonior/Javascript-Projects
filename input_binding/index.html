@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>VueJS Course</title>
+  <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+  <div id="app" v-cloak>
+    <p>{{ fullName() }}</p>
+    <p><a :href="url" target="_blank">Google</a></p>
+
+    <hr />
+
+    <label>First Name</label>
+    <input type="text" v-model="firstName" />
+
+    <label>Last Name</label>
+    <input type="text" v-model="lastName" />
+  </div>
+
+  <!-- <div id="app2">
+    {{ firstName }}
+    {{ lastName }}
+  </div> -->
+
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
