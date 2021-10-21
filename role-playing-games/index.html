@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <script src="js/enemy.js"></script>
+    <script src="js/gamemanager.js"></script>
+    <script src="js/player.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <p>Play the Greatest RPG ever to be made!</p>
+        <h2>Choose your character</h2>
+    </div>
+    <div class="interface">
+        <a href="#" onclick="GameManager.setGameStart('Warrior')">
+            <img src="img/warrior.jpg" alt="">
+            <div>
+                <h3>Warrior</h3>
+                <p>High health and stamina but slower and clumsier</p>
+            </div>
+        </a>
+        <a href="#" onclick="GameManager.setGameStart('Rogue')">
+            <img src="img/rogue.jpg" alt="">
+            <div>
+                <h3>Rogue</h3>
+                <p>High health and stamina but slower and clumsier</p>
+            </div>
+        </a>
+        <a href="#" onclick="GameManager.setGameStart('Mage')">
+            <img src="img/mage.jpg" alt="">
+            <div>
+                <h3>Mage</h3>
+                <p>They have spells but lacks everything else</p>
+            </div>
+        </a>
+        <a href="#" onclick="GameManager.setGameStart('Hunter')">
+            <img src="img/hunter.jpg" alt="">
+            <div>
+                <h3>Hunter</h3>
+                <p>All rounders. No Strengths and No weaknesses</p>
+            </div>
+        </a>
+    </div>
+    <div class="actions">
+
+    </div>
+    <div class="arena">
+
+    </div>
+    <div class="enemy">
+
+    </div>
+</body>
+</html>
