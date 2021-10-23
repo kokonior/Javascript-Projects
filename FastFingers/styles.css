@@ -1,0 +1,90 @@
+body{
+    font-family: 'Oxygen', sans-serif;
+    background-color: #e7e7e7;
+    font-size: 14px;
+}
+
+#main-container{
+    padding: 10px;
+    background-color:#34495e;
+    height: 280px;
+    width: 75%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+.container-time-score{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.container-Time{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.container-score{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.container-word{
+    display: flex;
+    justify-content: center;
+}
+.container-input{
+    display: flex;
+    justify-content: center;
+}
+.container-countdownTimer{
+    display: flex;
+    align-items: flex-start;
+}
+.container-seconds{
+    display: flex;
+    align-self: flex-start;
+}
+#start-heading{
+    align-self: center;
+    background-color: #e7e7e7;
+    height: 50px;
+    padding: 5px;
+    width: 250px;
+    border-radius: 5px;
+}
+#time {
+    color: #e7e7e7;
+    /* width: 42px; */
+    align-content: flex-start;
+}
+#countdown-timer {
+    /* width: 42px; */
+    color: #e7e7e7;
+}
+#seconds {
+    /* width: 42px; */
+    color: #e7e7e7;
+}
+#word {
+    background-color: #e7e7e7;
+    height: 50px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 250px;
+}
+#spellCheck {
+    width: 400px;
+    height: 50px;
+    font-size: 20px;
+    padding: 5px;
+}
+#score {
+    /* width: 42px; */
+    color: #e7e7e7;
+}
+#scoreBoard {
+    /* width: 42px; */
+    color: #e7e7e7;
+}
