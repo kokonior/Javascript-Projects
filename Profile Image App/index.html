@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<style>
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+
+
+</style>
+  <head>
+
+    <meta charset="utf-8">
+    <title>Vue.JS - tutorial</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- minify -->
+     <link href="https://unpkg.com/nes.css@2.1.0/css/nes.min.css" rel="stylesheet" />
+<!-- latest -->
+      <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+<!-- core style only -->
+      <link href="https://unpkg.com/nes.css/css/nes-core.min.css" rel="stylesheet" />
+
+      <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+      <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+  </head>
+  <body>
+    <ul>
+   <li><a href="#home">Home</a></li>
+   <li><a href="#news">Info</a></li>
+   <li><a href="#contact">Contact</a></li>
+   <li style="float:right"><a class="active" href="#about">About</a></li>
+  </ul>
+
+    <div class="container" id="app">
+
+
+        <h2 align="center">My Profile</h2><br>
+        <div v-if="!image">
+          <center><input type="file" class="form-control" @change="onFileChange"></center>
+        </div>
+        <div v-else>
+          <img :src="image" width="350px" height="350px " class="img-responsive center-block" /><br>
+
+
+            <button type="button" name="button" class="btn btn-success center-block" @click="removeImage">Change profile image</button>
+        </div>
+
+    </div>
+
+  <script src="app.js" charset="utf-8"></script>
+
+  <h2><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; name: John Lee</h2>
+  <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; age: 35</h2>
+  <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; job: messenger</h2>
+  <br>
+
+
+
+  </body>
+
+</html>
