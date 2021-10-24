@@ -1,0 +1,25 @@
+[{
+    "name": "Brownie",
+    "age": "3",
+    "weight": "2.5",
+    "breed": "Pomeranian",
+    "food": "Biscuits",
+    "gender": "Male"
+},
+{
+    "name": "Fleetfoot",
+    "age": "2",
+    "weight": "4",
+    "breed": "Golden Retriever",
+    "food": "Eggs",
+    "gender": "Female"
+},
+{
+    "name": "Tintin",
+    "age": "4",
+    "weight": "3",
+    "breed": "Poodle",
+    "food": "Grapes and Mango",
+    "gender": "Male"
+}
+]
