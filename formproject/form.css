@@ -1,0 +1,37 @@
+body {
+    background-color: black;
+    font-size: 20px;
+}
+.heading h1{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.cards {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 25px 0;
+    grid-gap: 15px;
+    align-items: center;
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.heading h1:after,
+        .heading h1:before {
+            content: " ";
+            display: block;
+            border-bottom: 1px solid #c5003b;
+            border-top: 1px solid #c5003b;
+            height: 5px;
+            background-color: #c5003b;
+        }
+.p{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
