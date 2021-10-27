@@ -1,0 +1,43 @@
+import java.util.Scanner;
+public class GradedLab4 {
+	public static void main(String []args)
+    {
+        Scanner scan = new Scanner(System.in);
+        String []arr=new String[10];
+        int i,j;
+        String temp;
+
+        System.out.println("Enter 10 names : ");
+        System.out.println();
+        for(i=0;i<10;i++)
+        {
+            arr[i]=scan.nextLine();
+        }
+
+        System.out.println("Names before sorting : ");
+        for(i=0;i<10;i++)
+        {
+            System.out.print(arr[i]+"  ");
+        }
+        System.out.println();
+
+        for(i=0;i<10;i++)
+        {
+            for(j=0;j<10-i-1;j++)
+            {
+                if(arr[j].compareTo(arr[j+1])>0)
+                {
+                    temp=arr[j];
+                    arr[j]=arr[j+1];
+                    arr[j+1]=temp;
+                }
+            }
+        }
+
+        System.out.println("Names after sorting in ascending order : ");
+        for(i=0;i<10;i++)
+        {
+            System.out.print(arr[i]+"  ");
+        }
+    }
+}
