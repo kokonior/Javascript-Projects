@@ -1,0 +1,70 @@
+body {
+    background-image: linear-gradient(to top, rgba(88, 233, 59, 0.801), rgb(5, 212, 33)); 
+}
+
+h1 {
+    text-align: center;
+    margin: 3%;
+    font-size: 80px;
+    color: azure;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    transform: rotateY(360deg);
+}
+
+.coin {
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    margin-top: 150px;
+}
+
+.tossButton {
+    text-align: center;
+}
+
+#tossBtn {
+    height:80px;
+    width: 80px;
+    border-radius: 50%;
+    margin:50px;
+}
+
+#tossBtn:hover {
+    transform: scale(1.2);
+} 
+
+#showBtn:hover {
+    transform: scale(1.2);
+} 
+
+
+.rotate {
+    animation: anime 1s infinite;
+    animation-timing-function: linear;
+  }
+  
+@keyframes anime {
+    0% {transform: rotate3d(0deg); bottom:0px;}
+    25% {transform: rotateX(360deg); bottom:150px;}
+    50% {transform: rotateX(720deg); bottom:300px;}
+    75% {transform: rotateX(360deg); bottom:150px;}
+    100% {transform: rotateX(0deg); bottom:0px;}
+}
+
+#radiohead {
+    position: absolute;
+    z-index: -5;
+}
+
+#radiotail {
+    position: absolute;
+    z-index: -5;
+}
+
+footer {
+    color: #EEEEEE;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    font-size: 20px;
+  }
