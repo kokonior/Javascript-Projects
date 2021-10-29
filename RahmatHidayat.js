@@ -4,3 +4,8 @@ const to_currencyEl = document.getElementById('to_currency');
 const to_ammountEl = document.getElementById('to_ammount');
 const rateEl = document.getElementById('rate');
 const exchange = document.getElementById('exchange');
+
+from_currencyEl.addEventListener('change', calculate);
+from_ammountEl.addEventListener('input', calculate);
+to_currencyEl.addEventListener('change', calculate);
+to_ammountEl.addEventListener('input', calculate);
