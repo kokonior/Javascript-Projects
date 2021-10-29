@@ -21,3 +21,33 @@ function del(){
   display.textContent=exp;
   
 }
+
+function concat(){
+    if(flag==0 && this.value=='-'){
+        display.textContent=this.value; 
+        exp=this.value;
+        flag++;             
+    }
+    if(flag===0 && this.value<=9 ){
+            display.textContent=this.value; 
+            exp=this.value;
+            flag++;
+    }
+    else if(flag>0){ 
+        if(Number(exp[exp.length-1])<=9 ){
+            if(this.value=='x'){
+             display.textContent+='*'; 
+             exp+='*';
+            }
+            else{
+            display.textContent+=this.value; 
+            exp+=this.value; 
+            }
+        }
+        else if(Number(this.value)<=9){
+            display.textContent+=this.value; 
+            exp+=this.value;
+        }
+    }
+         
+}
