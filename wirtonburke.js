@@ -4,4 +4,10 @@ function pl() {
 
     let vowels = ["a", "e", "i", "o", "u"];
     
-    
+    let newStr = "";
+    let stra = str.split(" ");
+
+    for (s in stra) {
+        let ss = stra[s];
+        
+        
