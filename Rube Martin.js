@@ -17,3 +17,7 @@ function change1tox(board) {
     }
     return board
 }
+
+console.log(increment(board))
+console.log(increment(board))
+console.log(increment(board))
