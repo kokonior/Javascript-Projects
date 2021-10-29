@@ -25,3 +25,40 @@ function updateRange() {
   highValue.style.flex = 100 - high + "%";
   highValue.style.background = "#ef7b54";
 }
+
+function gameEnded() {
+  document.getElementById("newGameButton").style.display = "inline";
+  document.getElementById("inputBox").setAttribute("readonly", "readonly"); // (attr name, attr value)
+}
+
+function newGame() {
+  window.location.reload();
+}
+
+function init() {
+  computerGuess = Math.floor(Math.random() * 100 + 1);
+  document.getElementById("newGameButton").style.display = "none";
+  document.getElementById("gameArea").style.display = "none";
+}
+
+function startGameView() {
+  document.getElementById("welcomeScreen").style.display = "none";
+  document.getElementById("gameArea").style.display = "block";
+}
+
+function easyMode() {
+  maxGuesses = 10;
+  startGameView();
+}
+
+function hardMode() {
+  maxGuesses = 5;
+  startGameView();
+}
+
+function compareGuess() {
+  const userGuess = Number(document.getElementById("inputBox").value);
+  userGuesses.push(" " + userGuess);
+  document.getElementById("guesses").innerHTML = userGuesses;
+  attempts++;
+  document.getElementById("attempts").innerHTML = attempts;
