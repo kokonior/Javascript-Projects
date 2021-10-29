@@ -1,0 +1,39 @@
+{
+  "name": "using-pre-built-react-components",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "homepage": "http://imohitpant.github.io/keeper",
+  "dependencies": {
+    "@material-ui/core": "4.11.4",
+    "@material-ui/icons": "4.11.2",
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.13",
+    "react": "^16.8.6",
+    "react-dom": "16.8.6",
+    "react-scripts": "3.2.0",
+    "react-tsparticles": "^1.35.4",
+    "serve": "^12.0.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3",
+    "typescript": "3.3.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
