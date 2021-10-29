@@ -9,3 +9,13 @@ function pl() {
 
     for (s in stra) {
         let ss = stra[s];
+
+        if (vowels.indexOf(ss[0]) > -1) {
+            newStr += " " + ss + "way";
+
+        } else {
+            let firstMatch = ss.match(/[aeiou]/g) || 0;
+            let vowel = ss.indexOf(firstMatch[0]);
+            newStr += " " + ss.substring(vowel) + ss.substring(0, vowel) + "ay";
+        }
+    }
