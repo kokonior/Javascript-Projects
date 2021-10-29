@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PingBox</title>
+    <link rel="icon" type="image/png" sizes="64x64" href="./images/chat.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tooltip"> <img src="./images/reloadwarning.png" alt="warning"><span class="tooltiptext">Reloading page will delete Message</span></div>
+    <div class="chatArea">
+        <div id="status"></div>
+        <div id="output"></div>
+    </div>
+    <input type="text" name="name" id="dname" placeholder="Enter your name" autofocus autocomplete="off">
+    <input type="text" name="message" id="message" placeholder="Enter your message" autocomplete="off">
+    <input type="submit" value="Send" id="send">
+
+    <footer>Made with 🧡</footer>
+
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+    <script>
+        var socket = io();
+
+        var btn = document.getElementById("send")
+        var uname = document.getElementById("dname")
+        var message = document.getElementById("message")
+        var output = document.getElementById("output")
+        var statusMessage = document.getElementById("status")
+
+        btn.addEventListener("click", ()=>{
+            socket.emit('data', {
+                userName: uname.value,
+                userMessage: message.value
+            })
+            message.value = ""
+            message.focus()
+        })
+
+        document.addEventListener("keypress", (e)=>{
+            if(e.key === "Enter") {
+                socket.emit('data', {
+                userName: uname.value,
+                userMessage: message.value
+                })
+                message.value = ""
+                message.focus()
+            }
+        })
+
+        socket.on('data', (data)=>{
+            output.innerHTML += "<p><strong>"+data.userName+" : </strong>"+data.userMessage+"</p>"
+        })
+
+        message.addEventListener("keypress", ()=>{
+            socket.emit('status', uname.value)
+        });
+        socket.on('status', (statusName)=>{
+            statusMessage.innerHTML = "<p><em>"+statusName+" is typing</em></p>"
+        })
+        
+        
+        document.addEventListener("keydown", (e)=>{
+
+            if (e.keyCode === 116) {
+                e.preventDefault();
+
+                Swal.fire({
+                title: "All the message gets deleted!",
+                text: 'Press F5 to delete',
+                icon: 'warning',
+                showCancelButton: true,
+                showConfirmButton: false,
+                cancelButtonColor: '#d33',
+                cancelButtonText: 'Esc'
+                })
+            }
+        })
+    </script>
+    
+</body>
+</html>
