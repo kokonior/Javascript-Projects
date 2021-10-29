@@ -79,3 +79,28 @@ function theme3(){
         keys[i].style.color="hsl(52, 100%, 62%)";
         keys[i].setAttribute("style","input:active,input::backdrop {box-shadow: none;outline: 0;}")
     }
+
+    keys[15].style.background="hsl(176, 100%, 44%)";
+    keys[15].style.boxShadow="0 3px 1px 0px hsl(177, 92%, 70%)";
+    keys[15].style.color='hsl(198, 20%, 13%)';
+    keys[15].setAttribute("style","input:active,input::backdrop {box-shadow: none;outline: 0;}")
+    
+
+    keys[16].style.background="hsl(281, 89%, 26%)";
+    keys[17].style.background="hsl(281, 89%, 26%)";
+    keys[16].style.boxShadow="0 3px 1px 0px hsl(285, 91%, 52%)";
+    keys[17].style.boxShadow="0 3px 1px 0px hsl(285, 91%, 52%)";
+    keys[16].setAttribute("style","input:active,input::backdrop {box-shadow: none;outline: 0;}")
+    keys[17].setAttribute("style","input:active,input::backdrop {box-shadow: none;outline: 0;}")
+
+
+    display.style.color="hsl(52, 100%, 62%)";
+
+    document.querySelector(".top").style.color="hsl(52, 100%, 62%)";
+
+    document.querySelector(".scroll").style.background="hsl(268, 71%, 12%)"
+
+    document.querySelector(".circle").style.background="hsl(176, 100%, 44%)"
+
+
+}
