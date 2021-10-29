@@ -6,4 +6,8 @@ window.onload = () => {
       }
    }
   
-  
+  var html = document.getElementsByTagName('html');
+   html.style.innerText = `font-size: 12px;font-weight: 300;`;
+
+   var body = document.getElementsByTagName('body');
+   body.style.width = '90vw';
