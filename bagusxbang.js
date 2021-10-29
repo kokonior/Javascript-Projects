@@ -39,3 +39,8 @@ function increment(board) {
     }
     return newBoard
 }
+
+
+console.log(increment(board))
+console.log(increment(board))
+console.log(increment(board))
