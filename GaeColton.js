@@ -85,3 +85,38 @@ function compareGuess() {
   document.getElementById("attempts").innerHTML = attempts;
   
   
+if (attempts < maxGuesses) {
+    if (userGuess > computerGuess) {
+      if (userGuess < high) high = userGuess;
+      document.getElementById("textOutput").innerHTML =
+        "Your guess is too high";
+      document.getElementById("inputBox").value = "";
+    } else if (userGuess < computerGuess) {
+      if (userGuess > low) low = userGuess;
+      document.getElementById("textOutput").innerHTML = "Your guess is too low";
+      document.getElementById("inputBox").value = "";
+    } else {
+      let ans = document.getElementById("textOutput");
+      ans.style.color = '#1eff00';
+      ans.innerHTML ="Correct! You got it in " + attempts + " attempts";
+      gameEnded();
+    }
+  } else {
+    if (userGuess > computerGuess) {
+      var textOutput = document.getElementById("textOutput");
+      textOutput.style.color = 'red';
+      textOutput.innerHTML =
+        "YOU LOSE!, <br> The number was " + computerGuess;
+      gameEnded();
+    } else if (userGuess < computerGuess) {
+      document.getElementById("textOutput").innerHTML =
+        "YOU LOSE!, <br> The number was " + computerGuess;
+      gameEnded();
+    } else {
+      document.getElementById("textOutput").innerHTML =
+        "Correct! You got it in " + attempts + " attempts";
+      gameEnded();
+    }
+  }
+  updateRange();
+}
