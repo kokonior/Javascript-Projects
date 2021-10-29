@@ -19,3 +19,7 @@ function pl() {
             newStr += " " + ss.substring(vowel) + ss.substring(0, vowel) + "ay";
         }
     }
+
+     ot.innerHTML = newStr;
+ot.innerHTML = newStr;
+ot.innerHTML = newStr;
