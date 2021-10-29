@@ -18,3 +18,8 @@ window.onload = () => {
    var note1 = document.createElement('h1');
    note1.innerText = "Guess the Random number between 1-100";
    startScreen.appendChild(note1);    // added a heading  to start screen
+
+   main.appendChild(startScreen);            // added a div to main
+   document.body.appendChild(main);          // added a main in body
+
+}
