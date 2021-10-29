@@ -20,3 +20,8 @@ if (vowels.indexOf(ss[0]) > -1) {
             newStr += " " + ss.substring(vowel) + ss.substring(0, vowel) + "ay";
         }
     }
+
+    ot.innerHTML = newStr;
+}
+ot.innerHTML = newStr;
+ot.innerHTML = newStr;
