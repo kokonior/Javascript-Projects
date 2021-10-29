@@ -9,3 +9,10 @@ from_currencyEl.addEventListener('change', calculate);
 from_ammountEl.addEventListener('input', calculate);
 to_currencyEl.addEventListener('change', calculate);
 to_ammountEl.addEventListener('input', calculate);
+
+exchange.addEventListener('click', () => {
+ const temp = from_currencyEl.value;
+ from_currencyEl.value = to_currencyEl.value;
+ to_currencyEl.value = temp;
+ calculate();
+});
