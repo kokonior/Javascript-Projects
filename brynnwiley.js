@@ -11,3 +11,11 @@ window.onload = () => {
 
    var body = document.getElementsByTagName('body');
    body.style.width = '90vw';
+
+   var main = document.createElement('main');
+   var startScreen = document.createElement('div');   // create a div
+   startScreen.setAttribute('id','startScreen');   // setting id to div
+   var note1 = document.createElement('h1');
+   note1.innerText = "Guess the Random number between 1-100";
+   startScreen.appendChild(note1);    // added a heading  to start screen
+   
