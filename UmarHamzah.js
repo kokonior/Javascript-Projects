@@ -71,3 +71,8 @@ word.addEventListener('input',function(element) {
         updateScore();
     }
 });
+
+from_currencyEl.addEventListener('change', calculate);
+from_ammountEl.addEventListener('input', calculate);
+to_currencyEl.addEventListener('change', calculate);
+to_ammountEl.addEventListener('input', calculate);
