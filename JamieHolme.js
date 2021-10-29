@@ -37,6 +37,19 @@ function addWordToH3 () {
 
 var countdown = setInterval(updateTime,1000);
 
+
+function updateTime () {
+    time--;
+    timeEl.innerHTML = time;
+
+    if(time == 0)
+    {
+        clearInterval(countdown);
+        document.getElementById("spellCheck").disabled = true;
+        document.getElementById("word").innerHTML = "TIME UP!";
+    }
+}
+=======
 addWordToH3();
 
 function updateTime2() {
@@ -59,3 +72,4 @@ word.addEventListener('input',function(element) {
         updateScore();
     }
 });
+
