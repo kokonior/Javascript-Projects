@@ -98,3 +98,8 @@ function compareGuess() {
   }
   updateRange();
 }
+
+main.appendChild(startScreen);            // added a div to main
+   document.body.appendChild(main);          // added a main in body
+
+}
