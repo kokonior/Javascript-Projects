@@ -26,3 +26,13 @@ const words = ['sigh',
 'drag',
 'loving'
 ];
+
+function getRandomElement () {
+    return words[Math.floor(Math.random() * words.length)];
+}
+
+function addWordToH3 () {
+    document.getElementById("word").innerHTML = getRandomElement();
+}
+
+var countdown = setInterval(updateTime,1000);
