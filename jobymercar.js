@@ -21,3 +21,9 @@ new Vue({
         };
         reader.readAsDataURL(file);
     },
+
+    removeImage:function(e){
+      this.image='';
+    }
+  }
+})
