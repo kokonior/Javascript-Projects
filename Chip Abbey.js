@@ -189,3 +189,12 @@ function theme3(){
 
 
 }
+
+for (let i = 0; i < keys.length-3; i++) {
+    keys[i].addEventListener("click", concat);
+}
+
+keys[15].addEventListener('click',calculate);
+keys[16].addEventListener('click',reset);
+keys[17].addEventListener('click',del);
+scroller.addEventListener("click",move);
