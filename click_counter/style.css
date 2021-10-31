@@ -1,0 +1,30 @@
+.likes {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .buttons {
+    text-align: center;
+  }
+  
+  button {
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+  
+  #click {
+    background-color: rgb(128, 156, 104);
+  }
+  
+  #reset {
+     background-color: rgb(223, 133, 30);
+  }
