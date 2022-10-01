@@ -1,5 +1,5 @@
 
-# Javascript-Projects - Hacktoberfest 16oct 2021 
+# Javascript-Projects - Hacktoberfest 2022 
 
 Feel free to create new file, don't hesitate to pull your code, the most important thing is that the file name here must match your nickname so that file does not conflict with other people.
 
@@ -21,4 +21,4 @@ Don't forget to give the project a star! Thanks again!
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 =======
-# hacktoberfest16oct2021  
+#HACKTOBERFEST2022  
