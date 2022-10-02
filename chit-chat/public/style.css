@@ -1,0 +1,121 @@
+.chatArea{
+    outline: none;
+    border: none;
+    box-shadow: 0 -100px 1000px 0 #00acb567;
+}
+input{
+    outline: none;
+    border: none;
+}
+body{
+    margin: 0;
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Comic Sans MS', Comic Sans, cursive;
+    
+    background-color: #0b0014;
+background-image: url("https://www.transparenttextures.com/patterns/skulls.png");
+}
+.chatArea{
+    width: 500px;
+    height: 500px;
+    overflow: auto;
+    margin: 1rem;
+    padding: 1rem;
+    
+    background-color: #000f3d;
+background-image: url("https://www.transparenttextures.com/patterns/gravel.png");
+    color: #00ADB5;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+input{
+    background-color: #393e464f;
+    color: #00ADB5;
+    width: 500px;
+    height: 50px;
+
+    margin: 0.5rem;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+input[type="submit"]{
+    width: 100px;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    text-shadow: 0 0 10px #7c86f3;
+}
+strong{
+    color: #fdfdfd;
+}
+#status p{
+    font-size: 1rem;
+    font-weight: lighter;
+}
+* ::-webkit-scrollbar {  
+    display: none;
+}
+.tooltip{
+    position: fixed;
+    right: 1rem;
+    top: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.tooltiptext{
+    background-color: rgba(0, 0, 0, 0.486);
+    border-radius: 10px;
+    color: #f1ff98;
+    visibility: hidden;
+    padding: 5px;
+    user-select: none;
+    margin: 5px;
+    transform: translateX(330px);    
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(1, 0, 0, 1);
+
+}
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+    transition-duration: 1s;
+    transform: translateX(0);
+}
+#output p{
+    overflow-wrap: break-word;
+}
+
+footer {
+    font-family: 'Brush Script MT', 'Brush Script Std', cursive;
+    font-style: italic;
+    color: #c4b9ff;
+}
+
+@media screen and (max-width: 540px) { 
+    body{
+        padding-top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+    .chatArea{
+        position: relative;
+        width: 150%;
+    }
+    input{
+        width: max-content;
+    }
+    
+}
