@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notex</title>
+    <link rel="stylesheet" href="home.css" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">            -->
+    <link href="https://fonts.cdnfonts.com/css/anaktoria" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    
+    <div class="container">
+     <div class="topbar">
+      <div class="logo">
+        <h1 style="font-size: 300%">NOTEX</h1>
+      </div>
+      <div class="searchBar"><input type="search" placeholder="Search" aria-label="Search" id = "searchBox" ><i class="fa fa-search" aria-hidden="true" style="font-size: 20px;"></i></div>
+    </div>
+      <div class="wrapper">
+        <div class="noteArea">
+          <h2 style="text-align: center;">ADD TITLE</h2>
+          <div class="title">
+          <input id="noteTitle" type="text" placeholder="Enter title">
+        </div>
+          <h2 style="text-align: center;">ADD NOTE</h2>
+          <div class="text">
+            <textarea id="noteText" placeholder = "Enter Notes" rows="5" cols="50"></textarea>
+          </div>
+          <div class="btnContainer">
+          <button id="addBtn"><p>Add Note</p></button>
+        </div>
+        </div>
+        <div class="showArea">
+          <h2 style="text-align: center;">YOUR NOTES</h2>
+          <div id="cardBox" style="font-family: Arial, Helvetica, sans-serif;">
+
+        </div>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script> -->
+    <script src="home.js"></script>
+  </body>
+</html>
