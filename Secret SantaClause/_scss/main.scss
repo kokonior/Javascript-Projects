@@ -1,0 +1,207 @@
+// =============================
+// Variables
+// =============================
+$red: #FF7373;
+$gray-light: #F5F5F5;
+$green: #69BA78;
+$blue: #87C7C7;
+$darkblue: #5A6380;
+
+$serif: 'Ovo', serif;
+$sans: 'Muli', sans-serif;
+
+$base-spacing: 1rem;
+
+// =============================
+// Layout
+// =============================
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: $gray-light;
+}
+
+.page-wrap {
+  padding-left: $base-spacing;
+  padding-right: $base-spacing;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 767px) {
+    width: 600px;
+  }
+}
+
+#main {
+  background: #fff;
+  box-shadow: 0 2px 2px darken($gray-light, 10%);
+  margin: 40px auto;
+  padding: 2rem;
+}
+
+#page_footer {
+  padding: $base-spacing;
+  text-align: center;
+}
+
+// =============================
+// Typography
+// =============================
+
+html { 
+  font-size: 62.5%; 
+}
+
+body {
+  font-family: $sans;
+  font-size: 1.6rem;
+}
+
+h1,
+h2 {
+  font-family: $serif;
+}
+
+h1 {
+  font-size: 4.8rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+a {
+  color: $darkblue;
+  text-decoration: none;
+  transition: box-shadow 0.3s;
+
+  &:hover {
+    box-shadow: inset 0 -2px 0 0 $darkblue;
+  }
+}
+
+// =============================
+// Form
+// =============================
+textarea {
+  line-height: 1.25;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid rgba(0,0,0,0.15);
+  border-radius: 3px;
+  transition: border-color 0.2s;
+
+  &:focus {
+    border: 2px solid $blue;
+    outline: none;
+  }
+
+  &.is-error {
+    border: 2px solid $red;
+  }
+}
+
+.button {
+  line-height: 1.25;
+  display: inline-block;
+  height: auto;
+  margin: 0;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+
+.button-submit {
+  background: $green;
+  font-size: 1.8rem;
+  color: #fff;
+  transition: background 0.2s;
+
+  &:hover,
+  &:focus {
+    background: darken($green, 10%);
+    outline: none;
+  }
+}
+
+.form-actions {
+  padding-top: 20px;
+  text-align: center;
+}
+
+#error {
+  height: 0;
+  visibility: hidden;
+  background: $red;
+  color: #fff;
+  opacity: 0;
+  transform: translate3d(0,10px,0);;
+  transform-origin: 50% 100%;
+  transition: opacity 0.3s, transform 0.3s;
+  pointer-events: none;
+
+  &.is-active {
+    pointer-events: auto;
+    opacity: 1;
+    height: auto;
+    visibility: visible;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    transform: translate3d(0,0,0) scale3d(1,1,1);;
+  }
+}
+
+// =============================
+// List
+// =============================
+dl {
+  margin: 0;
+  margin-top: 2rem;
+  padding: 0;
+  overflow: hidden;
+}
+
+dt, 
+dd {
+  display: inline-block;
+  float: left;
+}
+
+dt {
+  padding: 0.5rem;
+  font-weight: bold;
+  line-height: 1rem;
+  clear: left;
+  background: lighten($blue, 10%);
+}
+
+dd {
+  margin-left: 4px;
+  margin-bottom: 10px;
+
+  strong {
+    display: inline-block;
+    padding: 0.5rem;
+    line-height: 1rem;
+    background: lighten($red, 10%);
+  }
+}
+
+// =============================
+// Links
+// =============================
+
+.icon-link {
+  display: inline-block;
+  padding: $base-spacing;
+
+  svg {
+    vertical-align: middle;
+  }
+}

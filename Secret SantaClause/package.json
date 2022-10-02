@@ -1,0 +1,35 @@
+{
+  "name": "secret-santa-js",
+  "version": "1.0.0",
+  "description": "Randomly assign secret santa gift-givers",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessabean/secret-santa-js.git"
+  },
+  "keywords": [
+    "gulp",
+    "sass",
+    "mocha",
+    "javascript",
+    "html5"
+  ],
+  "author": "jessabean",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jessabean/secret-santa-js/issues"
+  },
+  "homepage": "https://github.com/jessabean/secret-santa-js#readme",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "chai": "^3.5.0",
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-sass": "^2.3.2",
+    "mocha": "^2.5.3"
+  }
+}
