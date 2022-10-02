@@ -1,0 +1,110 @@
+"use strict";
+
+function addition(x, y){
+    return x + y;
+}
+
+function subtract(x, y){
+    return x - y;
+}
+
+function multiply(x, y){
+    return x * y;
+}
+
+function exponent(x, y){
+    return x**y;
+}
+
+function divide(x, y){
+    return x/y;
+}
+
+function modulus(x, y){
+    return x % y;
+}
+
+function increment(x){
+    return x++;
+}
+
+function decrement(x){
+    return x--;
+}
+
+
+function nilaiFaktorial1(nilai){
+    var hasil=1;
+    for(let i=1;i<=nilai;i++){
+        hasil*=i;
+    }
+    return hasil;
+}
+
+//decrement
+function nilaiFaktorial2(nilai){
+    let hasil=1;
+    let i=nilai;
+    while(i>=1){
+        hasil=hasil*i;
+        i--;
+    }
+    return hasil;
+}
+
+function nilaiFaktorial3(nilai){
+    let hasil=1, i=1;
+    do{
+        hasil*=i;
+        i++;
+    }
+    while(i<=nilai);
+    return hasil;
+}
+
+
+function bilPrima(bil){
+    for (let index = 1; index <= bil; index++) {
+        if(bil==2 || bil==3){
+            console.log("bilangan prima")
+            return true;
+        }
+        else if(bil%2 == 0 || bil%3 == 0){
+            console.log("bilangan komposit");
+            return false;
+        }
+        else{
+            console.log("bilangan prima");
+            return true;
+        }
+    }
+}
+
+//decrement
+function bilPrima2(bil){
+    for(let i=bil-1;i>=2;i--) {
+        if(bil%i === 0){
+            return false;
+        }
+    }
+    return true;
+}
+
+function bilPrima3(bil){
+    let i=2;
+    while(i<bil){
+        if(bil%i === 0){
+            return false;
+        }
+        i++;
+    }
+    return true;
+}
+
+function diskon(jmlBayar, jmlDisc){
+    let totalDisc=jmlBayar*(jmlDisc/100);
+    let bayar=jmlBayar-totalDisc;
+    return "Diskon anda " + totalDisc+ "/"+jmlDisc+ "% Jumlah yang harus dibayarkan : "+bayar;
+}
+
+console.log(diskon(100000, 50));
