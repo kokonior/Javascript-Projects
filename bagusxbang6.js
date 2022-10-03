@@ -1,65 +1,82 @@
-const holes = document.querySelectorAll(".hole"),
-    scoreBoard = document.querySelector(".score"),
-    moles = document.querySelectorAll(".mole"),
-    start = document.querySelector(".start");
-let lastHole,
-    timeUp = false,
-    score = 0,
-    flag = 0,
-    timeout1,
-    timeout2;
-
-function randomTime(min, max) {
-    return Math.round(Math.random() * (max - min) + min);
-}
-
-function randomHoles(holes) {
-    const idx = Math.floor(Math.random() * holes.length);
-    const hole = holes[idx];
-    if (hole === lastHole) {
-        return randomHoles(holes);
+export default class Comparator {
+    /**
+     * Constructor.
+     * @param {function(a: *, b: *)} [compareFunction] - It may be custom compare function that, let's
+     * say may compare custom objects together.
+     */
+    constructor(compareFunction) {
+      this.compare = compareFunction || Comparator.defaultCompareFunction;
     }
-    lastHole = hole;
-    return hole;
-}
 
-function peep() {
-    const time = randomTime(200, 1000);
-    const hole = randomHoles(holes);
-    hole.classList.add("up");
-    timeout1 = setTimeout(() => {
-        hole.classList.remove("up");
-        if (!timeUp) peep();
-    }, time);
-}
+    /**
+     * Default comparison function. It just assumes that "a" and "b" are strings or numbers.
+     * @param {(string|number)} a
+     * @param {(string|number)} b
+     * @returns {number}
+     */
+    static defaultCompareFunction(a, b) {
+      if (a === b) {
+        return 0;
+      }
 
-function startGame() {
-    scoreBoard.textContent = 0;
-    score = 0;
-    timeUp = false;
-    peep();
-    timeout2 = setTimeout(() => (timeUp = true), 20000);
-}
-
-function bonk(e) {
-    if (!e.isTrusted) return;
-    score++;
-    this.classList.remove("up");
-    scoreBoard.textContent = score;
-    console.log(e);
-}
-
-start.addEventListener("click", () => {
-    if (flag == 0) {
-        startGame();
-        start.textContent = "Stop!";
-        flag = !flag;
-    } else if (flag == 1) {
-        start.textContent = "Start!";
-        holes.forEach((e) => e.classList.remove("up"));
-        clearTimeout(timeout1);
-        clearTimeout(timeout2);
-        flag = !flag;
+      return a < b ? -1 : 1;
     }
-});
-moles.forEach((e) => e.addEventListener("click", bonk));
+
+    /**
+     * Checks if two variables are equal.
+     * @param {*} a
+     * @param {*} b
+     * @return {boolean}
+     */
+    equal(a, b) {
+      return this.compare(a, b) === 0;
+    }
+
+    /**
+     * Checks if variable "a" is less than "b".
+     * @param {*} a
+     * @param {*} b
+     * @return {boolean}
+     */
+    lessThan(a, b) {
+      return this.compare(a, b) < 0;
+    }
+
+    /**
+     * Checks if variable "a" is greater than "b".
+     * @param {*} a
+     * @param {*} b
+     * @return {boolean}
+     */
+    greaterThan(a, b) {
+      return this.compare(a, b) > 0;
+    }
+
+    /**
+     * Checks if variable "a" is less than or equal to "b".
+     * @param {*} a
+     * @param {*} b
+     * @return {boolean}
+     */
+    lessThanOrEqual(a, b) {
+      return this.lessThan(a, b) || this.equal(a, b);
+    }
+
+    /**
+     * Checks if variable "a" is greater than or equal to "b".
+     * @param {*} a
+     * @param {*} b
+     * @return {boolean}
+     */
+    greaterThanOrEqual(a, b) {
+      return this.greaterThan(a, b) || this.equal(a, b);
+    }
+
+    /**
+     * Reverses the comparison order.
+     */
+    reverse() {
+      const compareOriginal = this.compare;
+      this.compare = (a, b) => compareOriginal(b, a);
+    }
+  } 
