@@ -1,4 +1,7 @@
 
+const incompleteBookshelfList = [];
+
+
 
 function addBelumBaca() {
   const namaJudul = document.getElementById("inputBookTitle").value;
