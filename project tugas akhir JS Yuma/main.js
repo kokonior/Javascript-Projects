@@ -1,5 +1,6 @@
 
-const incompleteBookshelfList = [];
+
+const RENDER_EVENT = "baca-buku";
 
 
 
