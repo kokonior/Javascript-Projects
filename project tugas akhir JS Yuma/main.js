@@ -1,5 +1,9 @@
 
 
+const RENDER_EVENT = "baca-buku";
+
+
+
 function addBelumBaca() {
   const namaJudul = document.getElementById("inputBookTitle").value;
   const namaPenulis = document.getElementById("inputBookAuthor").value;
