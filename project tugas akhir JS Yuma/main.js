@@ -1,4 +1,25 @@
 
+
+function addBelumBaca() {
+  const namaJudul = document.getElementById("inputBookTitle").value;
+  const namaPenulis = document.getElementById("inputBookAuthor").value;
+  const tahunTerbit = document.getElementById("inputBookYear").value;
+  const checkSelesai = document.getElementById("inputBookIsComplete").checked;
+
+  const generatedID = generateID();
+  const objectBuku = generateObjectBuku(
+    generatedID,
+    namaJudul,
+    namaPenulis,
+    parseInt(tahunTerbit),
+    checkSelesai
+  );
+  incompleteBookshelfList.push(objectBuku);
+
+  document.dispatchEvent(new Event(RENDER_EVENT));
+  simpanData();
+}
+
 function generateID() {
   return +new Date();
 }
