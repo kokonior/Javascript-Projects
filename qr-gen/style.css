@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(245, 74, 7);
+    min-height: 100vh;
+}
+.wrapper{
+background: white;
+max-width: 410px;
+border-radius: 20px;
+padding: 16px 25px;
+height: 260px;
+transition: height 0.2s ease;
+}
+.wrapper .form{
+    margin: 20px 0 30px;
+}
+.wrapper.active{
+    height: 530px;
+}
+.form :where(input,button)
+{
+    width:100%;
+    height: 55px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.form input{
+    font-size: 18px;
+    padding: 0 17px ;
+    border: 1px solid rgb(12, 9, 9);
+}
+.form button{
+    font-size: large;
+    background: yellow;
+    padding: 10px 17px ;
+    margin-top: 5px;
+    border: 1px solid rgb(12, 9, 9);
+    cursor: pointer;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper .qr{
+display: flex;
+align-items: center;
+justify-content: center;
+opacity: 0;
+pointer-events: none;
+}
+
+.wrapper.active .qr{
+    opacity: 1;
+    pointer-events: auto; 
+    transition: opacity 0.5s 0.5s ease;
+}
+
+.qr{
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+
+}
+
+.qr img{
+    width: 170px;
+}
+
+@media (max-width:430px) {
+    .wrapper{
+        height: 255px;
+        padding: 16px 20px;
+    }
+    .wrapper.active{
+        height: 510px;
+    }
+    .form :where(input,button)
+    {
+        height: 52px;
+    }
+    .qr img{
+        width: 160px;
+    }
+    
+}
