@@ -1,0 +1,171 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Titillium Web', sans-serif;
+	letter-spacing: 1.5px;
+}
+
+body {
+	background: linear-gradient(-135deg, rgba(71, 76, 211, 1), rgba(164, 46, 201, 1)) no-repeat center center fixed;
+	background-size: cover;
+	text-align: center;
+	overflow-wrap: break-word;
+}
+
+section {
+	width: 28%;
+	margin: 20px auto;
+	background-color: #4e4b4b;
+	border-radius: 5px;
+}
+
+.header {
+	color: white;
+	background-color: #444141;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+footer {
+	margin-top: 30px;
+	color: #444141;
+	display: none; 
+}
+
+.header h1 {
+	font-weight: bold;
+}
+
+.contentInfo {
+	background-color: #3a3d44;
+	max-width: 80%;
+	margin: 20px auto;
+	padding: 10px;
+	color: white;
+	border-radius: 5px;
+}
+
+button {
+	height: 50px;
+	width: 90px;
+	font-size: medium;
+	border-radius: 5px;
+	color: white;
+	border: none;
+	margin: 0 auto 30px;
+}
+
+.pomodoroInputs {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	margin: 50px auto;
+}
+
+.pomodoroInputs input {
+	max-width: 50%;
+	padding: 10px;
+	border-radius: 3px;
+	margin: 3px auto;
+	font-size: 24px;
+	text-transform: uppercase;
+	text-align: center;
+	border: none;
+	color: black;
+}
+
+.pomodoroDecisonButtons {
+	display: flex;
+	max-width: 70%;
+	margin: auto;
+	justify-content: space-between;
+}
+
+.startButton {
+	background-color: #2abd8c;
+}
+.resetButton {
+	background-color: #d62727;
+}
+.startButton,
+.resetButton {
+	margin-right: 5px;
+	font-weight: 500;
+}
+.pomodoroInputs {
+	color: white;
+	font-size: large;
+	font-weight: bold;
+	margin: 13% auto;
+}
+
+.timeUp {
+	background-color: red;
+}
+/* ======== queries ========= */
+@media (max-width: 320px) {
+	section {
+		width: 85%;
+	}
+	h1 {
+		font-size: 20px;
+	}
+
+	.pomodoroInputs input {
+		font-size: 15px;
+		max-width: 70%;
+	}
+	button {
+		height: 40px;
+		width: 70px;
+	}
+}
+
+@media (min-width: 320px) {
+	section {
+		width: 85%;
+	}
+	h1 {
+		font-size: 20px;
+	}
+	.pomodoroInputs input {
+		font-size: 15px;
+		max-width: 70%;
+	}
+	button {
+		height: 40px;
+		width: 70px;
+	}
+
+	.pomodoroInputs input {
+		max-width: 60%;
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 480px) {
+	section {
+		width: 400px;
+	}
+	button {
+		height: 50px;
+		width: 90px;
+	}
+
+	.pomodoroInputs input {
+		max-width: 50%;
+		font-size: 24px;
+	}
+}
+
+@media (min-width: 600px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 900px) {
+}
+
+@media (min-width: 1024px) {
+}
