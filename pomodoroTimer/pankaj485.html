@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pomodoro Timer</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./pankaj485.css" />
+	</head>
+	<body>
+		<section id="container">
+			<iframe
+				width="90%"
+				height="auto"
+				style="margin: 10px auto"
+				src="https://www.youtube.com/embed/jfKfPfyJRdk"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen
+			></iframe>
+
+			<div class="header">
+				<h1>POMODORO</h1>
+			</div>
+
+			<div class="contentInfo">
+				<h4 id="worktype"></h4>
+				<h2 id="pomodoroTimer">HH : MM : SS</h2>
+			</div>
+
+			<div class="pomodoroInputs">
+				<div class="workTime">
+					WORK TIME <br />
+					<input
+						id="pomodoroInputWorkMinutes"
+						placeholder="minutes"
+						type="number"
+					/>
+				</div>
+				<div class="restTime">
+					<br />
+					REST TIME <br />
+					<input
+						id="pomodoroInputRestMinutes"
+						placeholder="minutes"
+						type="number"
+					/>
+				</div>
+			</div>
+			<div class="pomodoroDecisonButtons">
+				<button class="startButton" id="pomodoroStartButton">START</button>
+				<button class="resetButton" id="pomodoroResetButton">RESET</button>
+			</div>
+		</section>
+		<footer>
+			Developed By <a href="https://github.com/pankaj485">Pank</a>
+		</footer>
+		<script src="pankaj485.js"></script>
+	</body>
+</html>
