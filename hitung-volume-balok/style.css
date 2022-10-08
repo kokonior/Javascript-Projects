@@ -1,0 +1,151 @@
+body {
+    background-color: #242424;
+    font-family: 'recursive', sans-serif;
+}
+
+input[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+
+label {
+    font-size: 20px;
+    color: white;
+}
+
+h1 {
+    font-family: 'recursive', sans-serif;
+    font-size: 32px;
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+.container {
+    font-family: 'recursive', sans-serif;
+    width: 30%;
+    margin: auto;
+    margin-top: 150px;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border-radius: 15px;
+    padding: 60px;
+}
+
+.hasil-akhir {
+    display: none;
+}
+
+.tombol-hitung {
+    align-items: center;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.tombol-hitung:active,
+.tombol-hitung:hover {
+    outline: 0;
+}
+
+.tombol-hitung span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+
+.tombol-hitung:hover span {
+    background: none;
+}
+
+.hasil-akhir {
+    align-items: center;
+    text-align: center;
+}
+
+.hasil {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+}
+
+/* footer */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.light-mode {
+    --glow-color: rgb(255, 255, 255);
+    --glow-spread-color: rgba(214, 214, 214, 0.781);
+    --enhanced-glow-color: rgb(197, 197, 197);
+    --btn-color: rgb(66, 66, 66);
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-family: 'recursive', sans-serif;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+   }
+   
+   .light-mode::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+   }
+   
+   .light-mode:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 2em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+   }
+   
+   .light-mode:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+           0 0 2.5em 2em var(--glow-spread-color),
+           inset 0 0 .5em .25em var(--glow-color);
+   }
