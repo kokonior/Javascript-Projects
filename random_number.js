@@ -1,1 +1,3 @@
- console.log(Math.floor(Math.random() * Math.pow(10, parseInt(100))));
+// generating  a random number
+const a = Math.random();
+console.log(a);
