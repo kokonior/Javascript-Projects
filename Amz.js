@@ -1,7 +1,8 @@
 const capital = new Map([
     ["Jakarta", "Indonesia"],
     ["London", "England"],
-    ["Tokyo", "Japan"]
+    ["Tokyo", "Japan"],
+    ["Lisbon","Portugal"]
 ]);
 
 console.log(capital.size);
