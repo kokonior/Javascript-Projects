@@ -1,0 +1,178 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #9c835f;
+  font-family: "Open Sans";
+}
+
+button {
+  border: none;
+}
+
+.batu-p1,
+.kertas-p1,
+.gunting-p1 {
+  width: 180px;
+  height: 180px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* border: 1px solid aqua; */
+  background-color: transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  transition: transform 0.5s;
+}
+
+.batubot,
+.kertasbot,
+.guntingbot {
+  width: 180px;
+  height: 180px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  outline: none;
+}
+
+.batu-p1:hover,
+.kertas-p1:hover,
+.gunting-p1:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.1);
+  border-radius: 15px;
+}
+
+.container {
+  width: 800px;
+  height: 98vh;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.judul {
+  position: absolute;
+  width: 410px;
+  height: 62px;
+  left: 218px;
+  top: 40px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  color: #f9b23d;
+}
+
+.logo {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  left: 150px;
+  top: 50px;
+  text-align: center;
+}
+
+#home {
+  position: absolute;
+  width: 55px;
+  height: 87px;
+  left: 100px;
+  top: 30px;
+  color: #724c21;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 98px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.tangan-p1,
+.tangan-bot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.ulang-game {
+  position: fixed;
+  text-align: center;
+  left: 50%;
+  top: 90%;
+  background-color: transparent;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  transform: translate(-50%, -50%);
+}
+
+.infogame {
+  width: 300px;
+  position: fixed;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+}
+
+.vs {
+  font-size: 100px;
+  color: #bd0000;
+
+  letter-spacing: 0.1em;
+  position: fixed;
+  text-align: center;
+  font-size: 144px;
+  line-height: 196px;
+  width: 200px;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.hasil-game {
+  color: white;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  margin: auto;
+}
+
+.kotak-hasil {
+  width: 271.11px;
+  height: 166.93px;
+  left: 43%;
+  top: 40%;
+  background: #4c9654;
+  border-radius: 10px;
+  transform: rotate(-28.87deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jari-player {
+  background-color: rgba(196, 196, 196, 0.8);
+  border-radius: 15px;
+  padding: 20px;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.disable-pilihan {
+  pointer-events: none;
+}
