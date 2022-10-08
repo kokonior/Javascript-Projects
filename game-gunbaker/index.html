@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>GunBaKer Game !</title>
+  </head>
+  <body>
+    <div class="header">
+      <a href="#" id="home"><</a>
+      <img class="logo" src="./assets/logogame.png" />
+      <h1 class="judul">Rock Papper Scissors</h1>
+    </div>
+
+    <div class="container">
+      <div class="tangan-p1">
+        <h1 class="player-1">Kamu</h1>
+        <button class="batu-p1">
+          <img src="./assets/batu.png" height="100px" />
+        </button>
+        <button class="kertas-p1">
+          <img src="./assets/kertas.png" height="130px" />
+        </button>
+        <button class="gunting-p1">
+          <img src="./assets/gunting.png" height="130px" />
+        </button>
+      </div>
+
+      <div class="tangan-bot">
+        <h1 class="player-bot">B-BoT</h1>
+        <button class="batubot">
+          <img src="./assets/batu.png" height="100px" />
+        </button>
+        <button class="kertasbot">
+          <img src="./assets/kertas.png" height="130px" />
+        </button>
+        <button class="guntingbot">
+          <img src="./assets/gunting.png" height="130px" />
+        </button>
+      </div>
+
+      <h2 class="vs">VS</h2>
+
+      <div class="infogame">
+        <h2 class="hasil-game"></h2>
+      </div>
+
+      <div class="ulang-game" onClick="window.location.reload();">
+        <img class="ulang" src="./assets/refresh.png" width="70px" height="70px" />
+      </div>
+    </div>
+
+    <!-- <script src="./main.js"></script> -->
+    <script src="./script.js"></script>
+  </body>
+</html>

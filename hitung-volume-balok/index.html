@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Recursive&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hitung Volume Balok</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <h1 class="title">Hitung Volume Balok</h1>
+
+        <label for="title-form">Panjang</label>
+        <input type="number" class="panjang" placeholder="Panjang balok" />
+        <br />
+        <label for="title-form">Lebar</label>
+        <input type="number" class="lebar" placeholder="Lebar balok" />
+        <br />
+        <label for="title-form">Tinggi</label>
+        <input type="number" class="tinggi" placeholder="Tinggi balok" />
+        <br />
+        <button class="container tombol-hitung" role="button"><span class="text">Hitung!</span></button>
+        <p class="hasil"></p>
+      </div>
+    </div>
+    <div class="footer">
+      <button class="light-mode">Light Mode</button>
+    </div>
+
+    <script src="rumus-balok.js"></script>
+  </body>
+</html>
