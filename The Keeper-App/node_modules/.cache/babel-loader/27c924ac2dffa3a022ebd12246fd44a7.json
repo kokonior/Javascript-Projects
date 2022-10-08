@@ -1,0 +1,1 @@
+{"ast":null,"code":"import createTheme from './createTheme';\nvar defaultTheme = createTheme();\nexport default defaultTheme;","map":null,"metadata":{},"sourceType":"module"}
