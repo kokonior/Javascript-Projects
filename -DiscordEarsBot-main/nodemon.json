@@ -1,0 +1,6 @@
+{
+  "verbose": true,
+  "ignore": [ "data/"],
+  "ext": "*"
+
+}
