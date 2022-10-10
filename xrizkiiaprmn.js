@@ -14,3 +14,4 @@ const middleName = readlineSync.question(`Nama Tengah\t: `);
 const LastName = readlineSync.question(`Nama Belakang\t: `);
 
 console.info(mergeName([firstName, middleName, LastName]));
+#HACKTOBERFEST2022
