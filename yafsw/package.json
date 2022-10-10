@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "prompt-sync": "^4.2.0",
+    "sha256": "^0.2.0",
+    "unique-names-generator": "^4.7.1"
+  }
+}
