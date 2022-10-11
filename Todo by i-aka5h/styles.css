@@ -1,0 +1,109 @@
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    background-color: purple;
+    color: black;
+    font: bold;
+    font-size: 3rem;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 3rem;
+    box-shadow: 1rem .5rem black;
+
+}
+
+.content{
+    width: 40rem;
+    margin: auto;
+}
+
+.enter{
+    margin: 2rem 0px;
+    width: 30rem;
+    height: 2rem;
+    border-radius: 5rem;
+    padding: .7rem 1rem;
+    font-size: 1.3rem;
+    box-shadow: .3rem .2rem black;
+    outline: black; 
+    border: .2rem solid black
+}
+
+.nothing{
+    width: 84%;
+    height: 10rem;
+    margin-top: 2rem;
+    font-size: 3rem;
+    color: red;
+    border-radius: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.display{
+    display: none;
+    color: purple;
+    background-color: black;
+    border-radius: 2.5rem;
+    padding: .6rem 0;
+}
+
+.display p{
+    box-sizing: border-box;
+    display:inline-block; 
+    width: 85%;  
+    font-weight: bolder;
+    font-size: 1.5rem;
+    padding: .5rem;
+    padding-left: 1.5rem;
+    padding-top: 0px;
+    margin: 0px;
+}
+
+.display section{
+    display: flex;
+}
+
+.display div{
+    padding: 0px;
+}
+
+.display span{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    color: red;
+    width: 15%;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.display span:active{
+    color: blue;
+}
+
+hr{
+    display: block;
+    width: 95%;
+}
+
+.btn{
+    height: 3rem;
+    width: 6rem;
+    margin-left: .6rem;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    color: white;
+    background-color: purple;
+    box-shadow: .3rem .2rem black;
+    cursor: pointer;
+}
+
+.btn:active{
+    box-shadow: 0rem 0rem white;
+    color: black;
+}
