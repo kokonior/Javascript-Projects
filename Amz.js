@@ -11,6 +11,7 @@ capital.set("New Delhi", "India");
 console.log(capital.size);
 console.log(capital.get("New Delhi"));
 console.log(capital.get("Lisbon"));
+console.log(capital.size);
 
 /* output
 3
