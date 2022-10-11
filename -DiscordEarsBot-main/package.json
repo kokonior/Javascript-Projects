@@ -1,0 +1,33 @@
+{
+  "name": "ears",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=12.x"
+  },
+  "author": "Ilja Nevolin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/healzer/DiscordEarsBot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/healzer/DiscordEarsBot/issues"
+  },
+  "homepage": "https://github.com/healzer/DiscordEarsBot#readme",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/opus": "^0.4.0",
+    "@google-cloud/speech": "^4.2.0",
+    "@mapbox/node-pre-gyp": "^1.0.1",
+    "discord.js": "^12.5.1",
+    "node-witai-speech": "^1.0.2",
+    "request": "^2.88.2",
+    "underscore": "^1.12.0",
+    "vosk": "^0.3.30"
+  }
+}
