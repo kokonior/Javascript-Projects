@@ -1,0 +1,37 @@
+{
+  "name": "simple-clock-webapp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/vue-fontawesome": "^3.0.0-5",
+    "autoprefixer": "^10",
+    "dexie": "^3.2.2",
+    "feather-icons": "^4.29.0",
+    "flowbite-datepicker": "^1.2.2",
+    "localbase": "^0.7.5",
+    "moment": "^2.29.4",
+    "moment-jdateformatparser": "^1.2.1",
+    "moment-timezone": "^0.5.37",
+    "pinia": "^2.0.22",
+    "postcss": "^8",
+    "sweetalert": "^2.1.2",
+    "tailwindcss": "^3",
+    "tw-elements": "^1.0.0-alpha12",
+    "vue": "^3.2.13",
+    "vue-router": "^4.0.3",
+    "vuex": "^4.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-vuex": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "vue-cli-plugin-tailwind": "~3.0.0"
+  }
+}
