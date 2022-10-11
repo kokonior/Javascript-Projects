@@ -1,0 +1,64 @@
+.colourButton{
+    background-color: rgb(255,0,0);
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: none;
+    margin: 10px;
+}
+
+#buttonWrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+	color:#D2691E;
+}
+
+#colourValue{
+    margin: 0 auto;
+    text-align: center;
+}
+
+#answer{
+    margin: 0 auto;
+    text-align: center;
+}
+
+#reset{
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+#resetButton{
+    padding: 10px;
+    background: none;
+    border: 1px solid #000;
+    margin: 10px;
+    display:inline-block;
+    box-shadow:2px 4px;
+}
+#resetButton:hover{
+  background-color:#9999FF;
+  transition:all 1s;
+}
+#resetButton:active{
+  position:relative;
+  top:5px; left:5px;
+  box-shadow:none;
+}
+#rs{
+  color:#000033;
+}
+#creator{
+	padding:10px;
+	text-align:center;
+	color:#000080;
+}	
