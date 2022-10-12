@@ -1,0 +1,21 @@
+body {
+  background-color: #B4FF9F;
+  color: #0E185F;
+  text-align: center;
+  font-family: 'DynaPuff';
+}
+
+h3 {
+  margin: 50px;
+}
+
+div {
+  margin: auto;
+}
+
+#grid {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
