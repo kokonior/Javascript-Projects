@@ -3,6 +3,7 @@
 const { sample, random, capitalize } = require("lodash");
 const { uniqueNamesGenerator, adjectives, colors } = require("unique-names-generator");
 const prompt = require("prompt-sync")();
+const sha256 = require("sha256");
 
 // Initiating a welcome of Password Tools
 const initialWelcome = [
@@ -46,7 +47,11 @@ switch (selected) {
     break;
   // Tool Password Hasher
   case "3":
-    result = "The tool is under development";
+    console.log("")
+    console.log("Enter the password you want to hash")
+    const password = prompt();
+
+    result = sha256(password);
 
     break;
   // Undefined Tool
