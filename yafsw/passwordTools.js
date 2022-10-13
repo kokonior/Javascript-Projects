@@ -42,7 +42,17 @@ switch (selected) {
     break;
   // Tool Password Checker
   case "2":
-    result = "The tool is under development";
+    console.log("")
+    console.log("Enter the password you want to check")
+    const length = prompt().length + 1 - 1;
+
+    console.log(length)
+
+    if (length < 3) result = "Very Weak"
+    else if (length < 5) result = "Weak"
+    else if (length < 8) result = "Good"
+    else if (length < 10) result = "Strong"
+    else result = "Very Strong";
 
     break;
   // Tool Password Hasher
