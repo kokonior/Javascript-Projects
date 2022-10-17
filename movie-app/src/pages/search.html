@@ -1,0 +1,72 @@
+<!-- Search -->
+<section id="search-section" class="w-full py-48px">
+  <div class="container mx-auto">
+    <div class="card">
+      <ul
+        class="card-tablist"
+        id="searchTab"
+        data-tabs-toggle="#searchTabContent"
+        role="tablist"
+      >
+        <li class="mr-2">
+          <button
+            id="search-tab"
+            data-tabs-target="#search"
+            type="button"
+            role="tab"
+            aria-controls="search"
+            aria-selected="true"
+            class="tablist-button"
+          >
+            Search
+          </button>
+        </li>
+      </ul>
+      <div id="searchTabContent">
+        <div
+          class="tablist-content"
+          id="search"
+          role="tabpanel"
+          aria-labelledby="search-tab"
+        >
+          <div class="inline-flex relative" role="group">
+            <div
+              class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
+            >
+              <svg
+                class="w-5 h-5 text-gray-500"
+                aria-hidden="true"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+            <form id="search-movie" class="flex">
+              <input
+                type="text"
+                id="input-search"
+                class="input-search"
+                placeholder="Search movie..."
+                required
+              />
+              <button
+                type="submit"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg rounded-l-none text-sm py-2 px-4 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+          <div class="movie-list-wrapper mt-4" id="search-list"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End of Search -->

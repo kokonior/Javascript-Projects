@@ -1,0 +1,47 @@
+<!-- Discover -->
+<section id="discover-section" class="w-full py-48px">
+  <div class="container mx-auto">
+    <div class="card">
+      <ul
+        class="card-tablist"
+        id="defaultTab"
+        data-tabs-toggle="#defaultTabContent"
+        role="tablist"
+      >
+        <li class="mr-2">
+          <button
+            id="discover-tab"
+            data-tabs-target="#discover"
+            type="button"
+            role="tab"
+            aria-controls="discover"
+            aria-selected="true"
+            class="tablist-button"
+          >
+            Discover for you
+          </button>
+        </li>
+      </ul>
+      <div id="defaultTabContent">
+        <div
+          class="tablist-content"
+          id="discover"
+          role="tabpanel"
+          aria-labelledby="discover-tab"
+        >
+          <div class="movie-list-wrapper" id="discover-list"></div>
+        </div>
+      </div>
+      <!-- Pagination -->
+      <nav aria-label="Page navigation" class="p-4">
+        <ul
+          class="inline-flex -space-x-px flex-wrap"
+          id="pagination"
+          data-page="1"
+        ></ul>
+      </nav>
+      <!-- End of Pagination -->
+    </div>
+  </div>
+</section>
+<!-- End of Discover -->
