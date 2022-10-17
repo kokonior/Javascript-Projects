@@ -1,8 +1,12 @@
-//split() digunakan untuk membagi string ke array string, sebagai contoh dibawah ini digunakan untuk memisah huruf dari var kata = 'helmipradita' dan hasil split akan berubah menjadi array
+// push() digunakan untuk menambahkan satu atau lebih elemen ke akhir sebuah array.
+let makanan = ["Nasi Pecel", "Nasi Goreng", "Soto Ayam"];
+let tambah = makanan.push("Bakso");
+console.log(makanan);
 
-var kata = 'helmipradita'
-var hasil = kata.split('')
-console.log(hasil)
+// pop() digunakan untuk menghapus elemen terakhir dari array, pop tidak menerima parameter.
+let minuman = ["Es Teh", "Es Jeruk", "Air Putih"];
+let hapus = minuman.pop();
+console.log(minuman);
 
 //unshift() digunakan untuk memasukkan value ke sebuah array tetapi disimpan di bagian depan array, seperti contoh var hewan1 = ['ayam', 'sapi', 'kerbau'] ingin menambahkan data 'kambing' di paling depan maka memakai fungsi unshift()
 var hewan1 = ['ayam', 'sapi', 'kerbau']
