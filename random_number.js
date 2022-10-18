@@ -1,3 +1,3 @@
-// generating  a random numb3r
+// generating  a random number
 const a = Math.random();
 console.log(a);
