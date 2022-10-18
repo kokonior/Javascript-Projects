@@ -52,7 +52,8 @@ switch (selected) {
     else if (length < 5) result = "Weak"
     else if (length < 8) result = "Good"
     else if (length < 10) result = "Strong"
-    else result = "Very Strong";
+    else if (length < 13) result = "Very Strong"
+    else result = "Ultra Strong";
 
     break;
   // Tool Password Hasher
