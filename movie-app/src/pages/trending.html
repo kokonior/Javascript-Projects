@@ -1,0 +1,47 @@
+<!-- Trending -->
+<section id="trending-section" class="w-full py-48px">
+  <div class="container mx-auto">
+    <div class="card">
+      <ul
+        class="card-tablist"
+        id="defaultTab"
+        data-tabs-toggle="#trendingTabContent"
+        role="tablist"
+      >
+        <li class="mr-2">
+          <button
+            id="trending-tab"
+            data-tabs-target="#trending"
+            type="button"
+            role="tab"
+            aria-controls="trending"
+            aria-selected="true"
+            class="tablist-button"
+          >
+            Trending Movies
+          </button>
+        </li>
+      </ul>
+      <div id="trendingTabContent">
+        <div
+          class="tablist-content"
+          id="trending"
+          role="tabpanel"
+          aria-labelledby="trending-tab"
+        >
+          <div class="movie-list-wrapper" id="trending-list"></div>
+        </div>
+      </div>
+      <!-- Pagination -->
+      <nav aria-label="Page navigation" class="p-4">
+        <ul
+          class="inline-flex -space-x-px flex-wrap"
+          id="pagination"
+          data-page="1"
+        ></ul>
+      </nav>
+      <!-- End of Pagination -->
+    </div>
+  </div>
+</section>
+<!-- End of Trending -->

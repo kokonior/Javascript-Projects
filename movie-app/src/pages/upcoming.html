@@ -1,0 +1,47 @@
+<!-- Upcoming -->
+<section id="upcoming-section" class="w-full py-48px">
+  <div class="container mx-auto">
+    <div class="card">
+      <ul
+        class="card-tablist"
+        id="defaultTab"
+        data-tabs-toggle="#upcomingTabContent"
+        role="tablist"
+      >
+        <li class="mr-2">
+          <button
+            id="upcoming-tab"
+            data-tabs-target="#upcoming"
+            type="button"
+            role="tab"
+            aria-controls="upcoming"
+            aria-selected="true"
+            class="tablist-button"
+          >
+            Upcoming Movies
+          </button>
+        </li>
+      </ul>
+      <div id="upcomingTabContent">
+        <div
+          class="tablist-content"
+          id="upcoming"
+          role="tabpanel"
+          aria-labelledby="upcoming-tab"
+        >
+          <div class="movie-list-wrapper" id="upcoming-list"></div>
+        </div>
+      </div>
+      <!-- Pagination -->
+      <nav aria-label="Page navigation" class="p-4">
+        <ul
+          class="inline-flex -space-x-px flex-wrap"
+          id="pagination"
+          data-page="1"
+        ></ul>
+      </nav>
+      <!-- End of Pagination -->
+    </div>
+  </div>
+</section>
+<!-- End of Upcoming -->

@@ -1,0 +1,38 @@
+<!-- Movie Details -->
+<section id="movie-details" class="w-full py-48px">
+  <div class="container mx-auto">
+    <div class="card">
+      <ul
+        class="card-tablist"
+        id="searchTab"
+        data-tabs-toggle="#movieDetailsContent"
+        role="tablist"
+      >
+        <li class="mr-2">
+          <button
+            id="movie-details-tab"
+            data-tabs-target="#movie-details-content"
+            type="button"
+            role="tab"
+            aria-controls="movie-details-content"
+            aria-selected="true"
+            class="tablist-button"
+          >
+            Movie Details
+          </button>
+        </li>
+      </ul>
+      <div id="movieDetailsContent">
+        <div
+          class="tablist-content"
+          id="movie-details-content"
+          role="tabpanel"
+          aria-labelledby="movie-details-tab"
+        >
+          <div class="w-full" id="movie-details-list"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End of Movie Details -->

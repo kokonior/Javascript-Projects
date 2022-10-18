@@ -1,0 +1,30 @@
+body {
+    padding-top: 70px;
+    margin: 0;
+    background-color: rgb(31, 177, 139);
+  }
+  @media (max-width: 979px) {
+    body {
+      padding-top: 0px;
+    }
+  }
+.navbar{
+    background-color: rgb(31, 177, 139);
+}
+
+.navbar-brand{
+    color: white;
+}
+
+.navbar-nav li a{
+    color: white;
+}
+
+.main-area{
+    display: flex;
+    height: 80vh;
+}
+
+#searchBar{
+    margin-top: 20vh;
+}
