@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie App</title>
+  </head>
+  <body>
+    <header class="">
+      <nav
+        class="bg-white fixed top-0 w-full border-gray-200 px-2 sm:px-4 py-2.5 rounded shadow dark:bg-gray-900 z-30"
+      >
+        <div
+          class="container flex flex-wrap justify-between items-center mx-auto"
+        >
+          <a href="/" class="flex items-center">
+            <img src="" id="logo-img" class="mr-3 h-8" alt="Movie App Logo" />
+            <span
+              class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+              >Movie App</span
+            >
+          </a>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul
+              class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+              id="navigation"
+            >
+              <li>
+                <a href="/?page=discover" class="nav-link">Discover</a>
+              </li>
+              <li>
+                <a href="/?page=search" class="nav-link">Search</a>
+              </li>
+              <li>
+                <a href="/?page=trending" class="nav-link">Trending</a>
+              </li>
+              <li>
+                <a href="/?page=upcoming" class="nav-link">Upcoming</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="w-full bg-slate-200 dark:bg-gray-700">
+      <!-- Hero -->
+      <section id="hero" class="w-full">
+        <img
+          class="block absolute left-0 right-0 w-screen h-[90vh] object-cover object-center"
+          src="#"
+          id="hero-img"
+        />
+        <div
+          class="flex flex-col flex-wrap justify-center items-center h-[90vh] relative backdrop-blur-sm"
+        >
+          <h1
+            class="text-3xl md:text-5xl lg:text-6xl font-bold leading-relaxed tracking-wider text-white drop-shadow-lg mb-2 lg:mb-4"
+          >
+            Movie App
+          </h1>
+          <p
+            class="text-center text-base font-normal text-slate-200 drop-shadow-lg lg:text-xl"
+          >
+            Discover and search for your favorite movies for free.
+          </p>
+          <div class="inline-flex relative mt-6" role="group">
+            <div
+              class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
+            >
+              <svg
+                class="w-5 h-5 text-gray-500"
+                aria-hidden="true"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+            <form id="search-movie" class="flex">
+              <input
+                type="text"
+                id="input-search"
+                class="input-search"
+                placeholder="Search movie..."
+                required
+              />
+              <a
+                href="/?page=search"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg rounded-l-none text-sm py-2 px-4 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+              >
+                Search
+              </a>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- End of Hero -->
+
+      <!-- Main Content -->
+      <div id="main-content"></div>
+      <!-- End of Main Content -->
+
+      <!-- Theme Toggler -->
+      <div
+        class="fixed bottom-0 right-0 z-50 flex items-center justify-center w-12 h-12 m-4"
+      >
+        <button
+          id="theme-toggle"
+          type="button"
+          class="text-gray-500 bg-gray-50 dark:bg-slate-900 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5"
+        >
+          <svg
+            id="theme-toggle-dark-icon"
+            class="hidden w-5 h-5"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+            ></path>
+          </svg>
+          <svg
+            id="theme-toggle-light-icon"
+            class="hidden w-5 h-5"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full bg-gray-50 dark:bg-gray-800">
+      <div
+        class="container flex flex-col flex-wrap items-center justify-between p-6 mx-auto md:flex-row"
+      >
+        <div
+          class="flex items-center justify-center text-sm font-medium text-gray-500"
+        >
+          <a href="#" class="text-gray-600 dark:text-gray-400 hover:underline"
+            >Movie App</a
+          >
+          <span class="mx-1 text-gray-500 dark:text-gray-400"
+            >© 2022. Created by
+            <a
+              class="text-gray-600 dark:text-gray-400 hover:underline"
+              href="https://instagram.com/lukmaan.24"
+              >Lukman</a
+            ></span
+          >
+        </div>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+  </body>
+</html>
