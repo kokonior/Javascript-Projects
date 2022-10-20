@@ -79,3 +79,13 @@ section {
 .image {
   overflow: hidden;
 }
+
+
+.nav-link:hover {
+
+  color: #23d997;
+ 
+  
+}
+
+
