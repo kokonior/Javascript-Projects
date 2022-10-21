@@ -1,0 +1,243 @@
+{
+	"info": {
+		"_postman_id": "c2f6ace9-1d0f-4816-a659-92efba93a9eb",
+		"name": "JSONPlaceHolder",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6067785"
+	},
+	"item": [
+		{
+			"name": "save json",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"hello\":\"world\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/save",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"save"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "save json example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"hello\",\r\n    \"data\":{\r\n        \"hello\":\"world\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/save",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"save"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "119"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"77-Tcy/AQa0A4KCRk2y/89Rk3iyzPM\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 21 Oct 2022 17:50:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"result\": {\n        \"filename\": \"hello-1666374645609.json\",\n        \"url\": \"http://127.0.0.1:3000/hello-1666374645609.json\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "get placeholder list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": [
+				{
+					"name": "get placeholder list",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000",
+							"host": [
+								"localhost"
+							],
+							"port": "3000"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "186"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ba-bcZzJ/Jtgn4ZlvaisCPAVohvVDA\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 21 Oct 2022 17:51:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"result\": [\n        {\n            \"filename\": \"hello-1666374645609.json\",\n            \"url\": \"http://127.0.0.1:3000/hello-1666374645609.json\"\n        },\n        {\n            \"filename\": \"test.json\",\n            \"url\": \"http://127.0.0.1:3000/test.json\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "sample get placeholder",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/test.json",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"test.json"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "sample get placeholder",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/test.json",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"test.json"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "21"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"15-UsMPypiw6IRdXiQ62Oz7QE9r0js\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 21 Oct 2022 17:51:27 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Hello Wolrd\"\n}"
+				}
+			]
+		}
+	]
+}
