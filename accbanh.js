@@ -5,3 +5,4 @@ console.log("Mencampurkan air dan kopi");
 console.log("Menuangkan kopi ke dalam gelas");
 console.log("Menuangkan susu ke dalam gelas");
 console.log("Kopi Anda sudah siap!");
+console.log("Your coffee ready!");
