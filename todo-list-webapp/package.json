@@ -1,0 +1,27 @@
+{
+  "name": "todo-list-webapp",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "prettier:fix": "prettier --write ."
+  },
+  "dependencies": {
+    "firebase": "^9.12.1",
+    "flowbite": "^1.5.3",
+    "pinia": "^2.0.23",
+    "prettier": "^2.7.1",
+    "vue": "^3.2.37",
+    "vue-router": "^4.1.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.1.0",
+    "autoprefixer": "^10.4.12",
+    "postcss": "^8.4.18",
+    "tailwindcss": "^3.1.8",
+    "vite": "^3.1.0"
+  }
+}
