@@ -8,7 +8,7 @@ while(input !== 'quit' && input !== 'q') {
         }
         console.log('----------------');
     } else if(input === 'new') {
-    const newTodo = prompt('OK! what is the new todo?');
+    const newTodo = prompt('OK! What is the new todo?');
     todos.push(newTodo);
     console.log(`${newTodo} added to the list!`);
     } else if (input === 'delete'){
@@ -21,6 +21,6 @@ while(input !== 'quit' && input !== 'q') {
             console.log('Unknown index')
         }
     }
-    input = prompt('what would you like to do?');
+    input = prompt('What would you like to do?');
 }
 console.log('OK YOU QUIT THE APP');
