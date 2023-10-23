@@ -1,0 +1,30 @@
+CHECK LIST
+# TODO
+    save darkMode in localStorage
+
+# FIX
+    checkbox in all vue
+        - detail weekly by day -> category
+
+ALL
+# BUG
+    bug in menu, when change route
+        ganti bg-warna berdasarkan router
+        
+    bug in temp.detail_weekly_day
+    - save in localStorage
+
+    bug in temp.status
+    - save in localStorage
+
+    bug ui in darkMode
+
+# ADD
+
+# DONE
+    bug in checkbox checklist when checked then reload
+    bug in counter ? ALL
+    - for counter, getLastId in collection
+    bug detail task list ketika reload
+    1. delete check list item
+    counter_items in check_list
