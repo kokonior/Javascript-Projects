@@ -1,1 +1,0 @@
-console.log('Hello Hacktoberfest 2022!')
